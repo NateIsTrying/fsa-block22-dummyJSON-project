@@ -13,8 +13,7 @@ Build a basic CRUD (Create, Read, Update, Delete) web app using the Dummy JSON A
 Users should be able to:  
 
     - See a list of all products  
-    - See a single product in a special view  
-    - Filter products with a simple 'text matcher'  
+    - See further details about a single product in a special view  
     - "Create" a new product and see a message that it was successful  
         - Display info received back from API  
     - "Delete" any product and see that it was successful  
