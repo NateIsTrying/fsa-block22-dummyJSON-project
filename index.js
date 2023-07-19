@@ -74,8 +74,14 @@ const createDummyProduct = async() => {
 }
 
 // - "Delete" any product and see that it was successful  
-//     - Display info received back from API
- 
+
+const deleteDummyProduct = async(id) => {
+    const response = await fetch(`https://dummyjson.com/products/${id}`, {
+        method: `DELETE`,
+    });
+    const data = response.json();
+    return data;
+} 
 
 
 const init = async() => {
@@ -83,8 +89,11 @@ const init = async() => {
     // singleDummyProduct();
     allDummyProducts();
     // - Display info received back from API
-    const loggedCreateDummy = await createDummyProduct();
-    console.log(loggedCreateDummy);
+    // const loggedCreateDummy = await createDummyProduct();
+    // console.log(loggedCreateDummy);
+
+    // - Display info received back from API
+    console.log(deleteDummyProduct(3));
 }
     
 init()
